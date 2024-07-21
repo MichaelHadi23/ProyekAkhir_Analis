@@ -15,7 +15,7 @@ min_date = bike_df["dteday"].min()
 max_date = bike_df["dteday"].max()
 with st.sidebar :
     # Menambahkan logo 
-    st.image("https://raw.githubusercontent.com/NurShofiatun/ProyekAnalisis/main/istockphoto-1180641993-1024x1024.jpg")
+    st.image("bike.jpg")
 
     # Mengambil start_date dan end_date dari date_input
     start_date, end_date = st.date_input(
