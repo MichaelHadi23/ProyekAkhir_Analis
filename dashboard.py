@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-bike_df=pd.read_csv("bike_df.csv")
+bike_df=pd.read_csv("all_data.csv")
 datetime_columns=["dteday"]
 bike_df.sort_values(by="dteday", inplace=True)
 bike_df.reset_index(inplace=True)
