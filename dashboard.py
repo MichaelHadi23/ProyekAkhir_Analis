@@ -18,7 +18,7 @@ def create_byweather_df(df):
     byweather_df = df.groupby("weather_situation").Total.sum().sort_values(ascending=False).reset_index()
     return byweather_df
 def create_rfm(df):
-    rfm_df = df.groupby(by="hour", as_index=False).agg({
+    rfm_df = df.groupby(as_index=False).agg({
     "dteday": "max", 
     "instant": "nunique", 
     "Total": "sum" 
@@ -58,7 +58,7 @@ main_df = hour_df[(hour_df["dteday"] >= str(start_date)) &
 daily_orders_df = create_daily_orders_df(main_df)
 ren_cas_df = create_ren_cas_df(main_df)
 ren_reg_df = create_ren_reg_df(main_df)
-rfm_df = create_rfm(main_df)
+
 
 st.header('Bike Sharing Dashboard :sparkles:')
 
