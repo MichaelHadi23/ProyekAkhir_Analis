@@ -14,7 +14,6 @@ def create_ren_reg_df(df):
     ren_reg_df = df.groupby("weekday").registered.sum().sort_values(ascending=False).reset_index()
     return ren_reg_df
 def create_bymonth_df(df):
-    bymonth_df = df.groupby("month").Total.sum().sort_values(ascending=False).reset_index()
     return bymonth_df
 def create_byweather_df(df):
     byweather_df = df.groupby("weather_situation").Total.sum().sort_values(ascending=False).reset_index()
@@ -61,7 +60,6 @@ daily_orders_df = create_daily_orders_df(main_df)
 ren_cas_df = create_ren_cas_df(main_df)
 ren_reg_df = create_ren_reg_df(main_df)
 bymonth_df = create_bymonth_df(main_df)
-byweather_df = create_byweather_df(main_df)
 rfm_df = create_rfm(main_df)
 
 st.header('Bike Sharing Dashboard :sparkles:')
