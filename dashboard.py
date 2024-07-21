@@ -7,7 +7,7 @@ bike_df=pd.read_csv("all_data.csv")
 
 bike_df.reset_index(inplace=True)
 
-for column in datetime_columns:
+
     bike_df[column] = pd.to_datetime(bike_df[column])
 
 # Membuat komponen filter
