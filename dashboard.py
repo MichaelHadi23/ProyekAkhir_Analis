@@ -77,7 +77,7 @@ with col3:
  
 
 
-plt.plot(daily_orders_df.index, daily_orders_df['Total'], color='#A5C0DD')
+
 plt.xlabel(None)
 plt.ylabel(None)
 plt.title('Number of Rental Over Time')
