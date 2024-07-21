@@ -8,7 +8,7 @@ bike_df=pd.read_csv("all_data.csv")
 bike_df.reset_index(inplace=True)
 
 
-    bike_df[column] = pd.to_datetime(bike_df[column])
+
 
 # Membuat komponen filter
 min_date = bike_df["dteday"].min()
