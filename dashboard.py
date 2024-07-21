@@ -11,8 +11,8 @@ bike_df.reset_index(inplace=True)
 
 
 # Membuat komponen filter
-min_date = bike_df["dteday"].min()
-max_date = bike_df["dteday"].max()
+
+
 with st.sidebar :
     # Menambahkan logo 
     st.image("bike.jpg")
