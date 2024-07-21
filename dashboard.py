@@ -71,16 +71,14 @@ with col1:
 with col2:
     total_registered = daily_orders_df.registered.sum()
     st.metric("Total Registered Rental", value=f'{total_registered:,}')
- 
-with col3:
-    
+
  
 
 
 
 plt.xlabel(None)
 plt.ylabel(None)
-plt.title('Number of Rental Over Time')
+
 plt.xticks(rotation=45)
 plt.grid(True)
 plt.tight_layout()
