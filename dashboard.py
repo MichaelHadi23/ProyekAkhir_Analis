@@ -33,7 +33,7 @@ def create_rfm(df):
     rfm_df.drop("max_order_timestamp", axis=1, inplace=True)
     return rfm_df
 
-hour_df = pd.read_csv("hour_data.csv")
+hour_df = pd.read_csv("hour.csv")
 datetime_columns = ["dteday"]
 hour_df.sort_values(by="dteday", inplace=True)
 hour_df.reset_index(inplace=True)
