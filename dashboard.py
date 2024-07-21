@@ -5,7 +5,7 @@ import streamlit as st
 
 bike_df=pd.read_csv("all_data.csv")
 datetime_columns=["day"]
-bike_df.sort_values(by="day", inplace=True)
+bike_df.sort_values( inplace=True)
 bike_df.reset_index(inplace=True)
 
 for column in datetime_columns:
