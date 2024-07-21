@@ -73,7 +73,7 @@ with col2:
     st.metric("Total Registered Rental", value=f'{total_registered:,}')
  
 with col3:
-    total_revenue = daily_orders_df.Total.sum()
+    
     st.metric("Total Rental", value=f'{total_revenue:,}')
 
 plt.figure(figsize=(10, 6))
