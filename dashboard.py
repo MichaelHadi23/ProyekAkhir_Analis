@@ -16,7 +16,6 @@ def create_ren_reg_df(df):
 def create_bymonth_df(df):
     return bymonth_df
 def create_byweather_df(df):
-    byweather_df = df.groupby("weather_situation").Total.sum().sort_values(ascending=False).reset_index()
     return byweather_df
 def create_rfm(df):
     rfm_df = df.groupby(by="hour", as_index=False).agg({
@@ -61,7 +60,6 @@ ren_cas_df = create_ren_cas_df(main_df)
 ren_reg_df = create_ren_reg_df(main_df)
 byweather_df = create_byweather_df(main_df)
 rfm_df = create_rfm(main_df)
-
 st.header('Bike Sharing Dashboard :sparkles:')
 
 st.subheader('Daily Rental')
