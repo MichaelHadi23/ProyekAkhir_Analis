@@ -74,7 +74,7 @@ with col2:
  
 with col3:
     
-    st.metric("Total Rental", value=f'{total_revenue:,}')
+    st.metric("Total Rental")
 
 plt.figure(figsize=(10, 6))
 plt.plot(daily_orders_df.index, daily_orders_df['Total'], color='#A5C0DD')
