@@ -13,7 +13,6 @@ def create_ren_cas_df(df):
 def create_ren_reg_df(df):
     ren_reg_df = df.groupby("weekday").registered.sum().sort_values(ascending=False).reset_index()
     return ren_reg_df
-def create_bymonth_df(df):
  
 def create_byweather_df(df):
     byweather_df = df.groupby("weather_situation").Total.sum().sort_values(ascending=False).reset_index()
